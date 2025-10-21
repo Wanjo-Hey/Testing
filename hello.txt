@@ -1,9 +1,24 @@
-👋 Hi, I’m Wanjo-Hey 👀 I’m interested in web development,
- software engineering, and networking. 🌱 I’m currently learning
-  B.Sc. Computer Science. 💞 I’m ready to collaborate on creating responsive websites and user-friendly software. 
-  📫 Reach me at iwanjohi81@gmail.com
+To push code from a local Git repository to an existing repository on GitHub, follow these steps:
+Navigate to your local repository: Open your terminal or command prompt and use the cd command to navigate to the root directory of your local project.
+Code
 
-  🌿 Truth:
+    cd /path/to/your/local/project
+Initialize Git (if not already initialized): If your project is not yet a Git repository, initialize it. 
+Code
 
-You can’t change the system until you stop letting it define you.
-Freedom starts the moment you say, “This is who I am — not who they told me to be.”
+    git init
+Add and commit your changes: Stage the files you want to push and commit them with a descriptive message.
+Code
+
+    git add .
+    git commit -m "Your commit message here"
+Add the remote repository (if not already added): If your local repository is not linked to the GitHub repository, add the remote origin. Replace USERNAME and REPOSITORY_NAME with your GitHub username and the name of your GitHub repository, respectively. 
+Code
+
+    git remote add origin https://github.com/USERNAME/REPOSITORY_NAME.git
+Push your code to GitHub: Push your committed changes to the designated branch (e.g., main or master) of your GitHub repository. The -u flag sets the upstream branch for future pushes.
+Code
+
+    git push -u origin main
+Note: If you are pushing to a different branch, replace main with the correct branch name.
+After executing these commands, your local code will be pushed to the specified branch of your existing GitHub repository. You can then verify the changes on the GitHub website.
